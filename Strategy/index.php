@@ -5,6 +5,9 @@ require_once "Clients/PaystackPaymentProvider.php";
 require_once "Clients/CryptoPaymentProvider.php";
 
 
+/**
+ * This code demonstrates the use of the Strategy design pattern to perform payments using different payment providers.
+ */
 
 $paymentProvider = new PaystackPaymentProvider;
 $paymentProvider->performPayment();
