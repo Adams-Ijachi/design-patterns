@@ -12,4 +12,9 @@ use Strategy\Contracts\PayBehaviourInterface;
         $this->payBehaviour->pay();
     }
 
+    public function setPaymentProvider(PayBehaviourInterface $payBehaviour): void
+    {
+        $this->payBehaviour = $payBehaviour;
+    }   
+
 }
